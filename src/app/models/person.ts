@@ -6,4 +6,5 @@ export interface IPerson {
     favoriteTechnology: string;
     hmbReason: string;
     profilePicture: string;
+    tagline: string;
   }
