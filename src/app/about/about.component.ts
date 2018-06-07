@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 import { IPerson } from '../models/person';
+import { InterestGroup } from '../models/interestGroup';
+import { InterestsComponent } from './interests/interests.component';
+import { Interest } from '../models/interest';
 
 @Component({
   selector: 'about',
@@ -8,6 +11,33 @@ import { IPerson } from '../models/person';
 })
 export class AboutComponent {
   public person: IPerson;
+  public interestGroup: InterestGroup;
+
+  constructor() {
+    this.interestGroup = {
+      interestTitle: 'States',
+      items: [
+        {
+          pictureSrc: '../../assets/img/virginia.jpg',
+          name: 'Virginia',
+          description: '3rd Anniversary Trip',
+          rating: 5
+        },
+        {
+          pictureSrc: '../../assets/img/idaho.JPG',
+          name: 'Idaho',
+          description: 'Watching NCAA Tournament',
+          rating: 4
+        },
+        {
+          pictureSrc: '../../assets/img/arizona.JPG',
+          name: 'Arizona',
+          description: 'Family Vacation',
+          rating: 3
+        },
+      ]
+    }
+  }
 
   ngOnInit() {
     this.makeInitialDataCall();
@@ -26,5 +56,5 @@ export class AboutComponent {
       profilePicture: '../../assets/img/profile.JPG'
     }
   }
-    
+
 }

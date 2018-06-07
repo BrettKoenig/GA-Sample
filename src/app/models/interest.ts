@@ -1,6 +1,6 @@
-export class Interest {
-    public pictureSrc: string;
-    public name: string;
-    public description: string;
-    public rating: number;
+export interface Interest {
+    pictureSrc: string;
+    name: string;
+    description: string;
+    rating: number;
   }
