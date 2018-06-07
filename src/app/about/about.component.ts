@@ -3,6 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'about',
   templateUrl: './about.template.html',
-  styles: ['h2 {color: green; } ']
+  styles: ['img {max-height: 300px; } ']
 })
 export class AboutComponent { }
