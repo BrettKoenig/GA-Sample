@@ -58,6 +58,10 @@ export class AboutComponent {
     }
   }
 
+  public onNotify(message: string): void {
+    alert("Interested in " + message);
+  }
+
   public sayTagline(): void {
     alert(this.person.tagline)
   }

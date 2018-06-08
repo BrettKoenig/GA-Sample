@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, EventEmitter, Output } from '@angular/core';
 import { InterestGroup } from '../../models/interestGroup';
 
 @Component({
@@ -8,4 +8,9 @@ import { InterestGroup } from '../../models/interestGroup';
 })
 export class InterestsComponent { 
   @Input() interest: InterestGroup
+  @Output() notify: EventEmitter<string> = new EventEmitter<string>();
+
+  onClick(name: string): void {
+    this.notify.emit(name)
+  }
 }
