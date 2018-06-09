@@ -11,10 +11,11 @@
                 <li>Experience with JavaScript/Angular: {{person.jsExperience}}</li>
                 <li>{{person.favoriteTechnology}}</li>
                 <li>{{person.hmbReason}}</li>
+                <li>I also enjoy: {{interests.additionalInterests}}</li>
             </ul>
             <button class="btn btn-primary mx-auto d-block" (click)='sayTagline()'>Say Tagline</button>
         </div>
     </div>
 </div>
 
-<interests [interest]='interestGroup' (notify)='onNotify($event)'></interests>
+<interests #interests [interest]='interestGroup' (notify)='onNotify($event)'></interests>
