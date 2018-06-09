@@ -14,7 +14,7 @@
             </ul>
             <div class="btn-group mx-auto d-block" role="group" aria-label="Basic example">
                 <button class="btn btn-primary" (click)='sayTagline()'>Say Tagline</button>
-                <button type="button" class="btn btn-secondary" (click)="showInterests = !showInterests">
+                <button type="button" [ngClass]="getButtonClasses()" (click)="showInterests = !showInterests">
                     <span [ngSwitch]="showInterests">
                         <span *ngSwitchCase="false">Show Interests</span>
                         <span *ngSwitchCase="true">Hide Interests</span>

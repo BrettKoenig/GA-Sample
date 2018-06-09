@@ -60,6 +60,15 @@ export class AboutComponent {
     }
   }
 
+  public getButtonClasses(): any {
+    return {
+      'btn': true,
+      'btn-success': this.interestGroup.interestTitle.includes('a'),
+      'btn-secondary': !this.interestGroup.interestTitle.includes('a'),
+      'active': this.showInterests
+    };
+  }
+
   public onNotify(message: string): void {
     alert("Interested in " + message);
   }
