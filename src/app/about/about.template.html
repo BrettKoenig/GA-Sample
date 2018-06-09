@@ -20,4 +20,4 @@
     </div>
 </div>
 
-<interests *ngIf="showInterests" [interest]='interestGroup' (notify)='onNotify($event)'></interests>
+<interests [style.display]="showInterests? 'inherit': 'none'" [interest]='interestGroup' (notify)='onNotify($event)'></interests>
