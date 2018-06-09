@@ -22,18 +22,21 @@ export class AboutComponent {
           pictureSrc: '../../assets/img/virginia.jpg',
           name: 'Virginia',
           description: '3rd Anniversary Trip',
+          date: '05/26/18',
           rating: 5
         },
         {
           pictureSrc: '../../assets/img/idaho.JPG',
           name: 'Idaho',
           description: 'Watching NCAA Tournament',
+          date: '03/15/18',
           rating: 4
         },
         {
           pictureSrc: '../../assets/img/arizona.JPG',
           name: 'Arizona',
           description: 'Family Vacation',
+          date: '01/01/18',
           rating: 3
         },
       ]

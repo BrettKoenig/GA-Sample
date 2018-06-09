@@ -19,6 +19,9 @@
                             Description
                         </th>
                         <th>
+                            Date
+                        </th>
+                        <th>
                             Rating (1-5)
                         </th>
                     </tr>
@@ -35,6 +38,9 @@
                     </td>
                     <td>
                         {{interest.description}}
+                    </td>
+                    <td>
+                        {{interest.date | date:'fullDate' }}
                     </td>
                     <td>
                         {{interest.rating}}
