@@ -12,7 +12,10 @@
                 <li>{{person.favoriteTechnology}}</li>
                 <li>{{person.hmbReason}}</li>
             </ul>
-            <button class="btn btn-primary mx-auto d-block" (click)='sayTagline()'>Say Tagline</button>
+            <div class="btn-group mx-auto d-block" role="group" aria-label="Basic example">
+                <button class="btn btn-primary" (click)='sayTagline()'>Say Tagline</button>
+                <button type="button" class="btn btn-secondary" (click)="showInterests = !showInterests">Show Interests</button>
+            </div>
         </div>
     </div>
 </div>
