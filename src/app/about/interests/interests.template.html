@@ -7,6 +7,9 @@
                 <thead class="thead-dark">
                     <tr>
                         <th>
+                            &nbsp;
+                        </th>
+                        <th>
                             Picture
                         </th>
                         <th>
@@ -20,46 +23,21 @@
                         </th>
                     </tr>
                 </thead>
-                <tr>
+                <tr *ngFor="let interest of interest.items; index as i">
                     <td>
-                        <img class="img-fluid img-thumbnail" src="../../assets/img/virginia.jpg" />
-                    </td>
-                    <td (click)='onClick("Virginia")'>
-                        Virginia
+                        {{i + 1}}
                     </td>
                     <td>
-                        3rd Anniversary Trip
+                        <img class="img-fluid img-thumbnail" [src]="interest.pictureSrc" />
+                    </td>
+                    <td (click)='onClick(interest.name)'>
+                        {{interest.name}}
                     </td>
                     <td>
-                        5
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img class="img-fluid img-thumbnail" src="../../assets/img/idaho.JPG" />
-                    </td>
-                    <td (click)='onClick("Idaho")'>
-                        Idaho
+                        {{interest.description}}
                     </td>
                     <td>
-                        Watching NCAA tournament
-                    </td>
-                    <td>
-                        4
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img class="img-fluid img-thumbnail" src="../../assets/img/arizona.JPG" />
-                    </td>
-                    <td (click)='onClick("Arizona")'>
-                        Arizona
-                    </td>
-                    <td>
-                        Family Vacation
-                    </td>
-                    <td>
-                        3
+                        {{interest.rating}}
                     </td>
                 </tr>
             </table>
