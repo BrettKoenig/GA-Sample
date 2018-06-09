@@ -34,7 +34,7 @@
                         <img class="img-fluid img-thumbnail" [src]="interest.pictureSrc" />
                     </td>
                     <td (click)='onClick(interest.name)'>
-                        {{interest.name}}
+                        {{interest.name | alphaCharactersOnly:true}}
                     </td>
                     <td>
                         {{interest.description}}

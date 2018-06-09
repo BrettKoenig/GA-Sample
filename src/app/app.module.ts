@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { InterestsComponent } from './about/interests/interests.component';
 import { FormsModule } from '@angular/forms';
+import { AlphaCharactersOnlyPipe } from './pipes/alphaCharactersOnly.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutComponent,
-    InterestsComponent
+    InterestsComponent,
+    AlphaCharactersOnlyPipe
   ],
   imports: [
     BrowserModule,
