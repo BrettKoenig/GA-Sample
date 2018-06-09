@@ -17,4 +17,4 @@
     </div>
 </div>
 
-<interests [interest]='interestGroup' (notify)='onNotify($event)'></interests>
+<interests *ngIf="showInterests" [interest]='interestGroup' (notify)='onNotify($event)'></interests>

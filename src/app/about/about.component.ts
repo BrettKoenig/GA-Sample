@@ -12,6 +12,7 @@ import { Interest } from '../models/interest';
 export class AboutComponent {
   public person: IPerson;
   public interestGroup: InterestGroup;
+  public showInterests: boolean;
 
   constructor() {
     this.interestGroup = {
@@ -36,7 +37,8 @@ export class AboutComponent {
           rating: 3
         },
       ]
-    }
+    };
+    this.showInterests = false;
   }
 
   ngOnInit() {
