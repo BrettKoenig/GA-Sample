@@ -10,6 +10,8 @@ export class InterestsComponent {
   @Input() interest: InterestGroup
   @Output() notify: EventEmitter<string> = new EventEmitter<string>();
 
+  searchString: string = '';
+  
   onClick(name: string): void {
     this.notify.emit(name)
   }
